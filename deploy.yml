@@ -7,4 +7,5 @@
   password: [71i9*B}kdrK
   host: ftp.xifox.net
   port: 21
-  path: /website/
+  path: /
+  local_path: website/
