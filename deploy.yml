@@ -1,10 +1,10 @@
 'settings':
   ignore_if_same_revision: true
-'example':
+'/':
   skip: false
   scheme: ftp
   user: rucatiri
-  password: [71i9*B}kdrK
+  password: '[71i9*B}kdrK'
   host: ftp.xifox.net
   port: 21
   path: /
