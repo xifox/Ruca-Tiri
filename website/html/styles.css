@@ -67,19 +67,36 @@ a#titulo {
 		}
 ul#menu{
 		display: block;
-		margin: 10px auto;
-		width: 716px;
+		margin: 20px auto 25px auto;
+		width: 866px;
+		height: 44px;
+		border: 1px dashed #fbc0a1;
 		}
 ul#menu li{
 	display:inline-block;
-	margin: 10px auto;
-	width: 140px;
+	line-height: 74px;
+	vertical-align: text-top;
+	width: 170px;
+	height: 74px;
 	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	margin-top:-15px;
+	}
+ul#menu li.primero{
+
+		}
+ul#menu li a{
+	display: inline-block;
+	color: #808285;
 	}
 img#logo {
 		display: block;
 		margin: 0 auto;
 		width: 155px;
+		}
+div#content {
+		margin-top: 20px;
 		}
 div#content p {
 		text-align: center;
@@ -87,11 +104,15 @@ div#content p {
 		width: 356px;
 		display: block;
 		margin: 0 auto;
+		font-family:'Quattrocento Sans', sans-serif;
+		color: #58595b;
 		}
 span#taller { 
 		position: relative;
-		right: -62px;
-		font-size:30px;
+		right: -48px;
+		font-family: 'Kameron', serif;
+		color:#6e7c81;
+		font-size:24px;
 		}
 div#footer {
 		background: url(puntilla.png) repeat-x;
@@ -105,14 +126,21 @@ div.telefono {
 		position:absolute;
 		right: 15px;
 		bottom: -48px;
-		line-height: 46px;
+		line-height: 40px;
+		}
+div.telefono span {
+		font-family: 'Oswald', sans-serif;
+		font-size: 24px;
+		color: #808285;
 		}
 img.mujer {
 		position: relative;
 		top:-10px;
 		}
 div#galeria { 
+		position: relative;
 		padding-left: 25px;
+		margin-top: -45px;
 		margin-bottom: 60px;
 		border-bottom: 1px dashed #56645e;
 		}
@@ -120,3 +148,8 @@ div#galeria a img {
 		position: relative;
 		bottom: -15px;
 		}
+div#galeria a {
+		font-family: 'Gochi Hand', cursive;
+		color: #231f20;
+		font-size: 24px;
+		} 
