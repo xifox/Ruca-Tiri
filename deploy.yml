@@ -1,0 +1,11 @@
+'settings':
+  ignore_if_same_revision: true
+'/':
+  skip: false
+  scheme: ftp
+  user: rucatiri
+  password: '[71i9*B}kdrK'
+  host: ftp.xifox.net
+  port: 21
+  path: /
+  local_path: website/
