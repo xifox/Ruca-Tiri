@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/*
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,18 +23,18 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-*/
+
 /* HTML5 display-role reset for older browsers */
-/*
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-*/
+
 body {
 	line-height: 1;
 }
-}/*
+}
 ol, ul {
 	list-style: none;
 }
@@ -50,25 +50,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-*/
+
 /**** end reset***/
 
 body { 
-	background: url(../images/trama.png) repeat 0 0;
-	}
+		background: url(../images/trama.png) repeat 0 0;
+		height: 100%;
+		}
 a {
-	text-decoration: none;
-	}
+		text-decoration: none;
+		}
 div#wrapper {
-	background: url(../images/puntitos.png) repeat-x bottom;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-			}
+		background: url(../images/puntitos.png) repeat-x bottom;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		height: 98%;
+		}
 a#titulo {
 		display: block;
-		margin: 30px auto 0;
+		margin: 0 auto 0;
 		width: 255px;
 		text-align: right;
+		padding-top: 30px;
 		}
 ul#menu{
 		width: 100%;
@@ -76,20 +79,17 @@ ul#menu{
 		border: 1px dashed #fbc0a1;
 		}
 ul#menu li{
-
-	line-height: 74px;
-	vertical-align: text-top;
-	width: 20%;
-	height: 74px;
-	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-size: 28px;
-	margin:-15px auto 0px auto;
-	}
+		line-height: 74px;
+		vertical-align: text-top;
+		width: 20%;
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 28px;
+		margin:-15px auto 0px auto;
+		}
 ul#menu li a{
-
-	color: #808285;
-	}
+		color: #808285;
+		}
 img#logo {
 		display: block;
 		margin: 0 auto;
@@ -114,18 +114,33 @@ span#taller {
 		color:#6e7c81;
 		font-size:24px;
 		}
+div#galeria { 
+		position:absolute;
+		bottom: 170px;
+		padding-left: 2%;
+		border-bottom: 1px dashed #56645e;
+		width: 98%;
+		}
+div#galeria a img {
+		margin-bottom: -25px;
+		}
+div#galeria a {
+		font-family: 'Gochi Hand', cursive;
+		color: #231f20;
+		font-size: 24px;
+		} 
 div#footer {
-		background: url(../images/puntilla.png) repeat-x;
-		margin-bottom:46px;
-		position:relative;
+		position: absolute;
+		bottom: 70px;
+		background: url(../images/puntilla.png) repeat-x bottom;
 		height:44px;
 		border-bottom: 1px dashed #bf3930;
+		width: 100%;
 		}
-
 div.telefono { 
 		position:absolute;
 		right: 15px;
-		bottom: -48px;
+		bottom: -50px;
 		line-height: 40px;
 		}
 div.telefono span {
@@ -133,23 +148,3 @@ div.telefono span {
 		font-size: 24px;
 		color: #808285;
 		}
-img.mujer {
-		position: relative;
-		top:-10px;
-		}
-div#galeria { 
-		position: relative;
-		padding-left: 25px;
-		margin-top: -45px;
-		margin-bottom: 60px;
-		border-bottom: 1px dashed #56645e;
-		}
-div#galeria a img {
-		position: relative;
-		bottom: -15px;
-		}
-div#galeria a {
-		font-family: 'Gochi Hand', cursive;
-		color: #231f20;
-		font-size: 24px;
-		} 
