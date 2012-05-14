@@ -35,7 +35,15 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+<link rel= "javascript" type= "text/js" href="<?php bloginfo( 'template_url' ); ?>/javascripts/tabs.js" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/base.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/layout.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/skeleton.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/styles.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width:960px)" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/medium.style.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/small.style.css" />
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ropa+Sans|Kameron|Oswald:700|Quattrocento+Sans:700|Gochi+Hand'>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>
@@ -44,13 +52,20 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
+	
+			<a id="titulo" href="#">
+					<img id="logo" src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" title="Ruca Tiri" alt="Ruca Tiri"/>
+					<span id="taller">Taller de costura</span>
+			</a>
+				
+	
 			<hgroup>
 				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 
 			
-			<nav id="access" role="navigation">
+			<nav id="access" role="navigation" class="container columns five row">
 				
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

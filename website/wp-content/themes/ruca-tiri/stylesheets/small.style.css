@@ -17,12 +17,12 @@ span#taller {
 		color:#6e7c81;
 		font-size:20px;
 		}
-ul#menu{
+ul#menu-menu-principal{
 		width:100%;
 		height: 280px;
 		border: 1px dashed #fbc0a1;
 		}
-ul#menu li{
+ul#menu-menu-principal li{
 	line-height: 74px;
 	vertical-align: text-top;
 	width: 100%;
@@ -35,12 +35,10 @@ div#content p {
 		text-align: center;
 		font-size: 24px;
 		width: 200px;
-		margin: 0 auto;
 		font-family:'Quattrocento Sans', sans-serif;
 		color: #58595b;
 		}
 div#galeria { 
-		position:static;
 		padding-left: 5%;
 		margin-top: -20px;
 		border-bottom: 1px dashed #56645e;
@@ -54,11 +52,11 @@ div#galeria a {
 		color: #231f20;
 		font-size: 24px;
 		} 
-div#footer {
+footer {
 		position:static;
 		margin-bottom: 40px;
-		background: url(../images/puntilla.png) repeat-x bottom;	
-		border-bottom: 1px dashed #bf3930;
+			
+		
 		width: 100%;
 		height:89px;
 		}
@@ -75,6 +73,6 @@ div.telefono span {
 		font-size: 20px;
 		color: #808285;
 		}
-div.container {
+nav.container {
 		width:70%;
 		}

@@ -17,6 +17,8 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
+			
+			
 			<?php if ( have_posts() ) : ?>
 
 
@@ -32,7 +34,7 @@ get_header(); ?>
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
@@ -41,9 +43,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
-			<div class="comments-link">
-				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
-			</div>
+			
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
@@ -57,6 +57,8 @@ get_header(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
+		
+		<div class="push"></div>
 
 		<footer class="entry-meta">
 			<?php $show_sep = false; ?>
@@ -89,10 +91,10 @@ get_header(); ?>
 			<?php if ( $show_sep ) : ?>
 			<span class="sep"> | </span>
 			<?php endif; // End if $show_sep ?>
-			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
+			
 			<?php endif; // End if comments_open() ?>
 
-			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+			
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
 
@@ -117,6 +119,11 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
+			
+			<div id="galeria">
+				<a href="#"> <img src="<?php bloginfo( 'template_url' ); ?>/images/maniqui.png" title="Maniqui" alt="maniqui" /> galer&iacute;a de fotos </a>
+			</div>
+			
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

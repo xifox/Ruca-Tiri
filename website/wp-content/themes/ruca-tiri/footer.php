@@ -13,19 +13,22 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
+	
+			<div class="telefono">	
+				<span> Tel&eacute;fono </span>
+				<img class="mujer" src="<?php bloginfo( 'template_url' ); ?>/images/mujer.png" title="Contacto" alt="Contacto" />
+				<span> 4778030 </span>
+			</div>
 
 			<?php
 				/* A sidebar in the footer? Yep. You can can customize
 				 * your footer with three columns of widgets.
 				 */
 				if ( ! is_404() )
-					get_sidebar( 'footer' );
+					//get_sidebar( 'footer' );
 			?>
 
-			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-			</div>
+			
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

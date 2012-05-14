@@ -52,7 +52,9 @@ table {
 }
 
 /**** end reset***/
-
+html {
+	height: 100%;
+	}
 body { 
 		background: url(../images/trama.png) repeat 0 0;
 		height: 100%;
@@ -60,11 +62,11 @@ body {
 a {
 		text-decoration: none;
 		}
-div#wrapper {
+div#wrapper{
 		background: url(../images/puntitos.png) repeat-x bottom;
 		margin-bottom: 0;
 		padding-bottom: 0;
-		height: 98%;
+		height: 100%;
 		}
 a#titulo {
 		display: block;
@@ -73,12 +75,12 @@ a#titulo {
 		text-align: right;
 		padding-top: 30px;
 		}
-ul#menu{
+ul#menu-menu-principal{
 		width: 98%;
 		height: 44px;
 		border: 1px dashed #fbc0a1;
 		}
-ul#menu li{
+ul#menu-menu-principal li{
 		line-height: 74px;
 		vertical-align: text-top;
 		width: 20%;
@@ -87,17 +89,27 @@ ul#menu li{
 		font-size: 28px;
 		margin:-15px auto 0px auto;
 		}
-ul#menu li a{
+ul#menu-menu-principal li a{
 		color: #808285;
 		}
+ul li#menu-item-23	{
+		background: url(../images/ideas.png) no-repeat center;
+		text-indent:-9999px;
+		}
+ul li#menu-item-24{
+		background: url(../images/novedades.png) no-repeat center;
+		text-indent:-9999px;
+		}
+
 img#logo {
 		display: block;
 		margin: 0 auto;
 		width: 155px;
 		}
 div#content {
-		margin-top: 20px;
+		height: 100%;	
 		}
+	
 div#content p {
 		text-align: center;
 		font-size: 30px;
@@ -115,11 +127,10 @@ span#taller {
 		font-size:24px;
 		}
 div#galeria { 
-		position:absolute;
-		bottom: 170px;
 		padding-left: 2%;
 		border-bottom: 1px dashed #56645e;
-		width: 98%;
+		width: 100%;
+		margin-top:-110px;
 		}
 div#galeria a img {
 		margin-bottom: -25px;
@@ -129,13 +140,11 @@ div#galeria a {
 		color: #231f20;
 		font-size: 24px;
 		} 
-div#footer {
-		position: absolute;
-		bottom: 70px;
+footer#colophon {
 		background: url(../images/puntilla.png) repeat-x bottom;
-		height:44px;
 		border-bottom: 1px dashed #bf3930;
 		width: 100%;
+		height: 50px;
 		}
 div.telefono { 
 		position:absolute;
@@ -148,6 +157,6 @@ div.telefono span {
 		font-size: 24px;
 		color: #808285;
 		}
-div.container { 
+nav.container { 
 		width: 100%;
 		} 
