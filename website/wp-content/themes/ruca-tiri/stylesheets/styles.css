@@ -59,16 +59,14 @@ body {
 		background: url(../images/trama.png) repeat 0 0;
 		height: 100%;
 		}
+div#page {
+	height:100%;
+	}
 a {
 		text-decoration: none;
 		}
-div#wrapper{
-		background: url(../images/puntitos.png) repeat-x bottom;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		height: 100%;
-		}
-a#titulo {
+
+hgroup {
 		display: block;
 		margin: 0 auto 0;
 		width: 255px;
@@ -77,6 +75,7 @@ a#titulo {
 		}
 ul#menu-menu-principal{
 		width: 98%;
+		margin: 0 1%;
 		height: 44px;
 		border: 1px dashed #fbc0a1;
 		}
@@ -94,13 +93,17 @@ ul#menu-menu-principal li a{
 		}
 ul li#menu-item-23	{
 		background: url(../images/ideas.png) no-repeat center;
+		}
+ul li#menu-item-24 a,ul li#menu-item-23 a{
 		text-indent:-9999px;
+		display:block;
+		width:96px;
+		height:74px;
+		margin:0 auto;
 		}
 ul li#menu-item-24{
 		background: url(../images/novedades.png) no-repeat center;
-		text-indent:-9999px;
 		}
-
 img#logo {
 		display: block;
 		margin: 0 auto;
@@ -109,7 +112,6 @@ img#logo {
 div#content {
 		height: 100%;	
 		}
-	
 div#content p {
 		text-align: center;
 		font-size: 30px;
@@ -119,7 +121,7 @@ div#content p {
 		font-family:'Quattrocento Sans', sans-serif;
 		color: #58595b;
 		}
-span#taller { 
+h2#site-description { 
 		position: relative;
 		right: -48px;
 		font-family: 'Kameron', serif;
@@ -129,8 +131,10 @@ span#taller {
 div#galeria { 
 		padding-left: 2%;
 		border-bottom: 1px dashed #56645e;
-		width: 100%;
-		margin-top:-110px;
+		width: 98%;
+		margin-top:-200px;
+		position:absolute;
+		bottom: 60px;
 		}
 div#galeria a img {
 		margin-bottom: -25px;
@@ -144,13 +148,19 @@ footer#colophon {
 		background: url(../images/puntilla.png) repeat-x bottom;
 		border-bottom: 1px dashed #bf3930;
 		width: 100%;
-		height: 50px;
+		height: 45px;
+		position:relative;
+		margin-top:50px;
+		}
+div#puntitos{
+		background: url(../images/puntitos.png) repeat-x bottom;
+		padding-top: 45px;
+		height: 100%;
 		}
 div.telefono { 
-		position:absolute;
-		right: 15px;
-		bottom: -50px;
+		float: right;
 		line-height: 40px;
+		margin-right: 10px;
 		}
 div.telefono span {
 		font-family: 'Oswald', sans-serif;
@@ -160,3 +170,12 @@ div.telefono span {
 nav.container { 
 		width: 100%;
 		} 
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -140px; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+	height: 140px; /* .push must be the same height as .footer */
+}

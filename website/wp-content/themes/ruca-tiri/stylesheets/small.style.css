@@ -55,18 +55,8 @@ div#galeria a {
 footer {
 		position:static;
 		margin-bottom: 40px;
-			
-		
 		width: 100%;
 		height:89px;
-		}
-div.telefono { 
-		width: auto;
-		position:static;
-		padding-right: 5%;
-		padding-top:48px;
-		line-height: 40px;
-		float: right;
 		}
 div.telefono span {
 		font-family: 'Oswald', sans-serif;

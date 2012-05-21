@@ -16,12 +16,8 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-
-			
 			
 			<?php if ( have_posts() ) : ?>
-
-
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -58,8 +54,6 @@ get_header(); ?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 		
-		<div class="push"></div>
-
 		<footer class="entry-meta">
 			<?php $show_sep = false; ?>
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
@@ -93,15 +87,11 @@ get_header(); ?>
 			<?php endif; // End if $show_sep ?>
 			
 			<?php endif; // End if comments_open() ?>
-
-			
+	
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
 
-
 				<?php endwhile; ?>
-
-			
 
 			<?php else : ?>
 
@@ -119,11 +109,15 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
-			
-			<div id="galeria">
-				<a href="#"> <img src="<?php bloginfo( 'template_url' ); ?>/images/maniqui.png" title="Maniqui" alt="maniqui" /> galer&iacute;a de fotos </a>
-			</div>
-			
+					
 		</div><!-- #primary -->
 
+	</div><!-- #main -->
+		<div class="push"></div>
+		
+		</div><!-- .wrapper -->
+		<footer id="colophon" role="contentinfo">
+		<div id="galeria">
+				<a href="#"> <img src="<?php bloginfo( 'template_url' ); ?>/images/maniqui.png" title="Maniqui" alt="maniqui" /> galer&iacute;a de fotos </a>
+			</div>
 <?php get_footer(); ?>

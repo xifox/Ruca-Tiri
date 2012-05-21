@@ -35,7 +35,6 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-
 <link rel= "javascript" type= "text/js" href="<?php bloginfo( 'template_url' ); ?>/javascripts/tabs.js" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/base.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/stylesheets/layout.css" />
@@ -51,26 +50,24 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
+<div class="wrapper">
 	<header id="branding" role="banner">
 	
-			<a id="titulo" href="#">
-					<img id="logo" src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" title="Ruca Tiri" alt="Ruca Tiri"/>
-					<span id="taller">Taller de costura</span>
-			</a>
-				
-	
 			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+				<h1 id="site-title">
+					<span>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img id="logo" src="<?php bloginfo( 'template_url' ); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>"/></a>
+					</span>
+				</h1>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
-
-			
+		
 			<nav id="access" role="navigation" class="container columns five row">
 				
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->
 	</header><!-- #branding -->
-
 
 	<div id="main">
