@@ -8,4 +8,13 @@ ul#menu-menu-principal li{
 	font-size: 18px;
 	margin:-15px auto 0px auto;
 	}
-
+ul li#menu-item-23	{
+		background: url(../images/ideas1.png) no-repeat center;
+		padding:28px 0;
+		margin-top:-40px;
+		}
+ul li#menu-item-24{
+		background: url(../images/novedades1.png) no-repeat center;
+		padding:28px 0;
+		margin-top:-40px;
+		}

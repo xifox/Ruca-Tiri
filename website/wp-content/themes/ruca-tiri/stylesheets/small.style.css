@@ -1,37 +1,36 @@
-div#wrapper {
-		background: url(../images/puntitos.png) repeat-x bottom;
-		margin-bottom: 10px;
-		padding-bottom: 0;
-		height: 930px;
-		}
-a#titulo {
-		display: block;
-		margin: 0 auto 0;
-		width: 150px;
-		text-align: right;
-		}
-span#taller { 
+h2#site-description { 
 		position: relative;
-		right: -40px;
+		right: -20px;
 		font-family: 'Kameron', serif;
 		color:#6e7c81;
-		font-size:20px;
+		font-size:24px;
 		}
 ul#menu-menu-principal{
 		width:100%;
 		height: 280px;
-		border: 1px dashed #fbc0a1;
+		margin-top:40px;
 		}
 ul#menu-menu-principal li{
-	line-height: 74px;
+	line-height: 40px;
 	vertical-align: text-top;
 	width: 100%;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
-	margin:-15px auto 0px auto;
+	
 	}
-div#content p {
+ul li#menu-item-23	{
+		background: url(../images/ideas1.png) no-repeat center;
+		padding:28px 0;
+		margin-top:-51px;
+		}
+ul li#menu-item-24{
+		background: url(../images/novedades1.png) no-repeat center;
+		padding:28px 0;
+		margin-top:-50px;
+		}
+	
+div#content p.inicio {
 		text-align: center;
 		font-size: 24px;
 		width: 200px;
